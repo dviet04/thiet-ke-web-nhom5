@@ -42,7 +42,7 @@
     text-align: center;
     padding-top: 5%;
     color: white;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
 }
@@ -50,7 +50,6 @@
     color: black;
     padding-left: 2%;
     text-decoration: none;
-    border-radius: 10px;
 }
 #link_order_now {
     color: blue;
@@ -73,10 +72,19 @@ nav {
     transform: scaleX(-1);
     border-radius: 10px;
 }
-#div2 {
-    display: grid;
-    grid-template-rows: 150px 500px;
-    padding: 20px 5%
+@media screen and (min-width: 600px) {
+    #div2 {
+        display: grid;
+        grid-template-rows: 150px 500px;
+        padding: 20px 5%
+    }
+}
+@media screen and (max-width: 599px) {
+    #div2 {
+        display: grid;
+        grid-template-rows: 150px 1500px;
+        padding: 20px 5%
+    }
 }
 #div2_chu {
     display: grid;
@@ -96,10 +104,19 @@ nav {
     font-size: 20px;
     color: rgb(38, 224, 21);
 }
-#div2_anh {
-    display: grid;
-    grid-template-columns: 40% 30% 30%;
-    padding-top: 15px;
+@media screen and (min-width: 600px) {
+    #div2_anh {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width: 599px) {
+    #div2_anh {
+        display: grid;
+        grid-template-columns: auto;
+        padding-top: 15px;
+    }
 }
 #khoianh1_lead_glass {
     display:grid;
@@ -363,7 +380,6 @@ nav {
     grid-template-columns: 66% 34%;
     color: black;
     padding: 20px 5% 20px 5%;
-    border-radius: 10px;
 }
 #div7_1 {
     display: grid; 
@@ -428,12 +444,10 @@ nav {
     color: yellow;
 }
 #div_chua_link :hover {
-    background-color: brown;
-    color: white;
+    color: brown;
 }
 #div_chua_link :active {
-    background-color: brown;
-    color: white;
+    color: brown;
 }
 .footer {
     display: grid;
