@@ -73,19 +73,10 @@ nav {
     transform: scaleX(-1);
     border-radius: 10px;
 }
-@media screen and (min-width: 600px) {
-    #div2 {
-        display: grid;
-        grid-template-rows: 150px 500px;
-        padding: 20px 5%
-    }
-}
-@media screen and (max-width: 599px) {
-    #div2 {
-        display: grid;
-        grid-template-rows: 150px 1500px;
-        padding: 20px 5%
-    }
+#div2 {
+    display: grid;
+    grid-template-rows: 150px 500px;
+    padding: 20px 5%
 }
 #div2_chu {
     display: grid;
