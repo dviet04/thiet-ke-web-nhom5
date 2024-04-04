@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Trang chu</title>
+        <style>
+            @media screen and (min-width: 700px) {
+                #footer_div0 {
+                    display: grid;
+                    background-color: rgb(0, 128, 0, 0.75);
+                    height: auto;
+                    grid-template-columns: 66% 34%;
+                    color: black;
+                    padding: 20px 5% 20px 5%;
+                }
+                #footer_div1 {
+                    display: grid; 
+                    grid-template-columns: 46% 54%;
+                }
+                #footer_div2 {
+                    padding-left: 50px;
+                }
+            }
+            @media (max-width: 699px) {
+                #footer_div0 {
+                    display: grid;
+                    background-color: rgb(255, 165, 0, 0.75);
+                    height: auto;
+                    grid-template-columns: 60% 40%;
+                    color: black;
+                    padding: 20px 5% 60px 5%;
+                }
+                #footer_div1 {
+                    display: grid; 
+                    grid-template-rows: 60% 40%;
+                }
+                #footer_div2 {
+                    padding-left: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <footer>
+            <div id="footer_div0">
+                <div id="footer_div1">
+                    <div style="grid-template-rows: 70% 30%;">
+                        <div style="margin: 20px auto 0px auto; text-align: center;"><img src="img/footer_logo.png" alt="Logo" width="60%"></div>
+                        <div style="margin: 0px auto 0px auto; text-align: center;"><img src="img/footer_icon.jpg" alt="logo.facebook" width="45%"></div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 50% 50%; margin: 0px; height: 210px;">
+                        <div>
+                            <h2><p>Order</p></h2>
+                            <h4>
+                                <p>About us</p>
+                                <p>Order Methods</p>
+                            </h4>
+                        </div>
+                        <div>
+                            <h2><p>Product</p></h2>
+                            <h4>
+                                <a href="#">Equipmemt</a> <br>
+                                <a href="#">Supplies</a> <br>
+                                <a href="#">Accessories</a> <br>
+                                <a href="#">Pasts</a> <br>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="footer_div2">
+                        <h2><p>Contact Imformation</p></h2>
+                        <h4>
+                            <p>Phone: 1-503-667-3000</p>
+                            <p>(8am - 5pm Monday - Friday)</p>
+                            <p>Toll-Free (US): 800-827-XRAY (800-827-9729)</p>
+                        </h4>
+                        <h4><p><Address>Address: P.O.Box 625, Gresham, OR 97030, U.S.A</Address></p></h4>
+                    </div>
+                    <div>
+                        <h4>@1997-2024 Pacific Northwest X-Ray Inc. - Sales & Marketing Division - All Rights Reserved</h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
