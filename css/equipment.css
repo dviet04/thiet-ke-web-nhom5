@@ -25,3 +25,79 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 80px;
 }
+
+/* Products */
+section {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  padding: 100px;
+  padding-bottom: 50px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+section img{
+  height: 70%;
+  width: auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: arial; 
+  transition: 0.3s;
+  height: 300px;
+  width: 250px;
+}
+
+.card h1{
+  margin-bottom: 5px;
+}
+
+.product-info{
+  position: relative;
+  top: 5%;
+  bottom: 8%;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  cursor: pointer;
+
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+/* Page number */
+.pagination{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.page-number{
+  display: flex;
+  justify-self: center;
+}
+
+.page-number a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.page-number a.active {
+  background-color: #47b5db;
+  color: white;
+}
+
+.page-number a:hover:not(.active) {background-color: #ddd;}
